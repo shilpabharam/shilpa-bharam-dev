@@ -12,7 +12,7 @@ const Navigation = () => {
     { label: "Experience", href: "#experience" },
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
-    { label: "Contact", href: "#contact" },
+    //{ label: "Contact", href: "#contact" },
   ];
 
   useEffect(() => {
@@ -52,6 +52,7 @@ const Navigation = () => {
       <nav className="container max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
+          <div className="logo"><img src="https://images-platform.99static.com//X5kQtzlPzvORSXwLJ9Pn-iHRkbc=/180x1161:823x1803/fit-in/500x500/99designs-contests-attachments/61/61431/attachment_61431386" width="50px" height="50px" alt="" className="border-radius: 50%;"/></div>
           <a
             href="#"
             className="text-xl font-bold gradient-text hover:opacity-80 transition-opacity"
@@ -140,11 +141,16 @@ const Navigation = () => {
                   {link.label}
                 </a>
               ))}
+
+              {/*<div className="cv">
+                <a href="https://drive.google.com/file/d/1ramoWiO3gHZgXw2Rz3g4-ETPZi5OBGNY/view" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>*/}
               <div className="px-4 pt-2">
-                <Button size="sm" className="w-full gap-2 gradient-primary text-white border-0">
-                  <Download className="w-4 h-4" />
-                  Download Resume
-                </Button>
+                {/*<Button size="sm" className="w-full gap-2 gradient-primary text-white border-0">*/}
+                  {/*<Download className="w-4 h-4" />*/}
+                  <a href="https://drive.google.com/file/d/1ramoWiO3gHZgXw2Rz3g4-ETPZi5OBGNY/view" 
+                  target="_blank" rel="noopener noreferrer">Resume</a>
+                {/*</Button>*/}
               </div>
             </div>
           </div>

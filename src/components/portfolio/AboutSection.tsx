@@ -1,4 +1,5 @@
 import { Users, Globe, Building2, Zap, Code2, Layers } from "lucide-react";
+import ContactSection from './ContactSection'
 
 const AboutSection = () => {
   const stats = [
@@ -37,8 +38,11 @@ AWARDS : “On-the-Fly Award” – HP | “Rising Star Award” – Capgemini |
 degree program. | First girl to graduate with engineering degree from the middle school (India).
             </p>
           </div>
+
+          <ContactSection></ContactSection>
         </div>
       </div>
+
     </section>
   );
 };

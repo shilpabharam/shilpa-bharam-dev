@@ -12,7 +12,7 @@ interface Experience {
 
 const ExperienceSection = () => {
   const experiences: Experience[] = [
-        {
+    {
       company: "Alberstons",
       role: "Senior Front-End Engineer",
       period: " July 2025 - Present",
@@ -21,9 +21,12 @@ const ExperienceSection = () => {
         "Leading frontend development for enterprise-scale applications serving global workforce management platforms.",
       technologies: ["React", "TypeScript", "Redux", "Node.js", "REST APIs"],
       highlights: [
-        "Built and maintained customer-facing applications used by 100K+ users",
-        "Led performance optimization initiatives reducing load times by 40%",
-        "Collaborated with cross-functional teams across Product, UX, and Backend",
+        "Built a store inventory management dashboard using React, TypeScript, Redux, and GraphQL.",
+        "Migrated legacy UI components to AngularJS-based architecture, improving maintainability and performance",
+        "Improved rendering performance by ~200ms through memoization and optimized component state placement.",
+        "Worked with AWS S3 and CloudFront for frontend asset deployment.",
+        "Wrote unit tests using Jest and React Testing Library, achieving ~80% coverage for core components."
+
       ],
     },
     {
@@ -35,9 +38,11 @@ const ExperienceSection = () => {
         "Leading frontend development for enterprise-scale applications serving global workforce management platforms.",
       technologies: ["React", "TypeScript", "Redux", "Node.js", "REST APIs"],
       highlights: [
-        "Built and maintained customer-facing applications used by 100K+ users",
-        "Led performance optimization initiatives reducing load times by 40%",
-        "Collaborated with cross-functional teams across Product, UX, and Backend",
+        "Contributed to HP’s Workforce Experience Portal, used by 40K+ employees across 20+ countries, centralizing device lifecycle management.",
+        "Implemented Redux architecture for predictable state management and maintainable frontend workflows.",
+        "Mentored junior developers and participated in code reviews to uphold frontend best practices and code quality.",
+        "Integrated GraphQL APIs into frontend workflows, reducing average data fetch latency by ~180ms.",
+        "Partnered with DevOps to automate deployments using Jenkins and AWS, contributing to CI/CD pipelines for dev and staging environments."
       ],
     },
     {
@@ -49,13 +54,14 @@ const ExperienceSection = () => {
         "Developed enterprise web applications for banking and retail sectors with focus on scalability and user experience.",
       technologies: ["Angular", "JavaScript", "RxJS", "NgRx", "SASS"],
       highlights: [
-        "Delivered retail POS systems handling thousands of daily transactions",
-        "Implemented data-driven dashboards for banking analytics platforms",
-        "Mentored junior developers and established coding best practices",
+        "Migrated secure online banking modules from jQuery to Angular, supporting 200K+ customers.",
+        "Utilized Angular Routing and Lazy Loading to optimize performance and reduce initial load time by over 15%.",
+        "Translated UI/UX wireframes into responsive, mobile-first applications, increasing mobile adoption by ~15%.",
+        "Collaborated with backend teams to integrate APIs and ensure reliable, secure data flows."
       ],
     },
     {
-      company: "Previous Experience",
+      company: "Automotive Research Association of India (ARAI)",
       role: "Front-End Developer",
       period: "2016 - 2018",
       location: "India",
@@ -63,9 +69,10 @@ const ExperienceSection = () => {
         "Built responsive web applications for automotive IoT and internal enterprise tools.",
       technologies: ["JavaScript", "React", "Angular", "MongoDB", "CSS3"],
       highlights: [
-        "Developed IoT dashboards for automotive industry clients",
-        "Created internal workforce management tools",
-        "Contributed to UI component libraries and design systems",
+        "Built a real-time IoT fleet management dashboard using Angular, Highcharts, and Google Maps APIs to track 500+ vehicles.",
+        "Developed interactive data visualizations and map-based UI for near real-time telemetry.",
+                "Collaborated with product and UX teams to deliver user-focused features.",
+        "Worked across the full SDLC, contributing to a product built from scratch in a startup-style environment."
       ],
     },
   ];
@@ -75,7 +82,7 @@ const ExperienceSection = () => {
       {/* Background */}
       <div className="absolute inset-0 mesh-gradient opacity-30" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-      
+
       <div className="relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold">
@@ -91,9 +98,8 @@ const ExperienceSection = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`relative mb-12 last:mb-0 ${
-                index % 2 === 0 ? "md:pr-8 md:text-right md:mr-auto" : "md:pl-8 md:ml-auto"
-              }`}
+              className={`relative mb-12 last:mb-0 ${index % 2 === 0 ? "md:pr-8 md:text-right md:mr-auto" : "md:pl-8 md:ml-auto"
+                }`}
             >
               {/* Timeline dot */}
               {/*<div
@@ -115,22 +121,22 @@ const ExperienceSection = () => {
                     <Building2 className="w-5 h-5 text-primary" />
                   </span>*/}
                   <span className="font-bold text-heading text-lg">{exp.company + "  |"}</span>
-                    <span className="font-bold text-heading text-lg">{exp.role + "  |" }</span>
-                        <span className={`flex items-center gap-4 text-sm text-muted-foreground mb-4 ${index % 2 === 0 ? "md:justify-end" : ""}`}>
-                  <span className="flex items-center gap-1">
-                    <Calendar className="w-4 h-4" />
-                    {exp.period}
+                  <span className="font-bold text-heading text-lg">{exp.role + "  |"}</span>
+                  <span className={`flex items-center gap-4 text-sm text-muted-foreground mb-4 ${index % 2 === 0 ? "md:justify-end" : ""}`}>
+                    <span className="flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      {exp.period}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <MapPin className="w-4 h-4" />
+                      {exp.location}
+                    </span>
                   </span>
-                  <span className="flex items-center gap-1">
-                    <MapPin className="w-4 h-4" />
-                    {exp.location}
-                  </span>
-                </span>
                 </div>
 
-              
-                
-                
+
+
+
 
                 <p className="text-text-primary mb-4 text-left">{exp.description}</p>
                 {/* Highlights */}

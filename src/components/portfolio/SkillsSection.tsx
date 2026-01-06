@@ -8,12 +8,12 @@ const SkillsSection = () => {
   const skillCategories: SkillCategory[] = [
     {
       title: "Primary Skills",
-      skills: ["React", "Angular", "JavaScript (ES6+)","TypeScript", "NodeJS", "HTML5", "CSS3"],
+      skills: ["React","Next","Redux", "Angular", "JavaScript (ES6+)","TypeScript", "NodeJS", "HTML5", "CSS3"],
       gradient: "from-primary to-purple-400",
     },
     {
       title: "Secondary Skills",
-      skills: ["GraphQL","RestAPI", "AWS", "Azure Services", " Tailwind CSS", "Redux","Jest/RTL"],
+      skills: ["GraphQL","RestAPI", "AWS", "Azure Services", " Tailwind CSS", "Redux","Jest/RTL","MongoDB"],
       gradient: "from-accent to-cyan-400",
     }
   ];

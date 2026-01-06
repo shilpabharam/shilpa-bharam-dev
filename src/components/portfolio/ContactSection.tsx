@@ -26,15 +26,15 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-24 px-4 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 mesh-gradient" />
+      {/*<div className="absolute inset-0 mesh-gradient" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       
       {/* Floating orbs */}
-      <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
+      {/*<div className="absolute top-1/3 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />*/}
       
       <div className="container max-w-4xl relative z-10">
-        <div className="text-center mb-12">
+        {/*<div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-primary text-sm font-medium">Let's Connect</span>
@@ -43,7 +43,7 @@ const ContactSection = () => {
             Get in <span className="gradient-text">Touch</span>
           </h2>
        
-        </div>
+        </div>*/}
 
         {/* Status Badges */}
         {/*<div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -83,6 +83,7 @@ const ContactSection = () => {
           ))}
         </div>
 
+
         {/* Resume CTA */}
         {/*<div className="text-center p-8 rounded-2xl bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10 border border-primary/20">
           <h3 className="text-xl font-bold text-heading mb-2">Ready to learn more?</h3>
@@ -96,11 +97,9 @@ const ContactSection = () => {
         </div>*/}
 
         {/* Footer */}
-        {/*<div className="mt-16 pt-8 border-t border-border/50 text-center">
-          <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Shilpa Bharam. Built with React & Tailwind CSS.
-          </p>
-        </div>*/}
+        <div className="mt-16 pt-8 border-t border-border/50 text-center">
+    <div className="credit"><span>Designed &amp; Built by</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png" alt="" width="25px" height="25px" /><span>Shilpa Shingnapure</span></div>
+        </div>
       </div>
     </section>
   );

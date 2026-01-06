@@ -38,7 +38,12 @@ const HeroSection = () => {
               </span>
 
               {/* Social Icons */}
-              <a href="https://www.linkedin.com/in/shilpabharam/" target="_blank"
+     
+
+              <a href="https://leetcode.com/shingnapure_shilpa17/" target="_blank">
+                <img  src="https://www.svgrepo.com/show/341985/leetcode.svg" width="20px" height="20px" alt="" />
+              </a>
+                      <a href="https://www.linkedin.com/in/shilpabharam/" target="_blank"
                 className="icon-btn">
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -51,13 +56,20 @@ const HeroSection = () => {
                 className="icon-btn">
                 <Github className="w-5 h-5" />
               </a>
+
+               
+
+            <a href="https://www.hackerrank.com/profile/shilpabharam06" target="_blank" >
+                <img className="icon-btn" src="https://www.svgrepo.com/show/341892/hackerrank.svg" width="20px" height="20px" alt="" />
+              </a>
+
             </div>
+
 
             {/* Description */}
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Front-End Developer with 8+ years of experience building scalable,
-              customer-centric applications using React, Next.js, Angular, and
-              micro-frontend architecture.
+    Front-End Engineer with 8+ years of experience building high-performance, responsive, and accessible web applications across enterprise and customer-facing platforms.
+Specialized in React, Next.js, Angular, and TypeScript with a strong focus on performance optimization, scalable UI architecture, and seamless user experiences.
             </p>
 
             {/* Tech Stack */}
